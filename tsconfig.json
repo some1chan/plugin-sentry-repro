@@ -1,0 +1,15 @@
+{
+	"extends": ["@sapphire/ts-config", "@sapphire/ts-config/decorators", "@sapphire/ts-config/verbatim"],
+	"compilerOptions": {
+		"baseUrl": "src",
+		"rootDir": "src",
+		"outDir": "dist",
+		"paths": {
+			"#lib/*": ["lib/*"],
+			"#root/*": ["*"]
+		},
+		"skipLibCheck": true
+	},
+	"include": ["src/**/*", "src/**/*.json"],
+	"exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]
+}
